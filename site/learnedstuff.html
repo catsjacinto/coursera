@@ -11,14 +11,14 @@
 
         <h1 style="color: orange">H1 TITLE</h1>
 
-        <section>
+        <section class="quote-paragraph-link">
             <h2 style="color: turquoise">H2 QUOTE &amp; LINK PARAGRAPH</h2>
             <p>Random content in a paragraph. &quot;Just a nice quote.&quot;</p>
             <p>Here's a <a href="whatever" title="whatever">link</a>.</p>
             <br/>
         </section>
         
-        <section>
+        <section class="lists">
             <h2 style="color: turquoise">H2 THEM LISTS</h2>
             <p>Here is an unordered list:</p>
             <ul>
@@ -40,139 +40,15 @@
                 <li>Item 2</li>
             </ol>
             <br/>
-            <h3 style="color: rgb(200, 255, 0)">H3 PUNNY AND UNFUNNY</h3>
+        </section>
+
+        <section class="lemon">
+            <h2 style="color: rgb(182, 233, 0)">H3 PUNNY AND UNFUNNY</h2>
             <p>Here's a beautiful lemon:</p>
             <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/746/397/products/limao-siciliano-114341-5ac768ef885011830215221664122581-1024-1024.jpg" width="400" height="400" alt="Pretty lemon"/>
             <!--p>Ignored comment</p> -->
         </section>
-
-        <section>
-            <table border="1px">
-                <thead>
-                    <tr>
-                        <th>heading 1</th>
-                        <th>heading 2</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>col 1</td>
-                        <td>col 2</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Colspan 2</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Rowspan</td>
-                        <td>Up</td>
-                    </tr>
-                    <tr>
-                        <td>Down</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <br/>
-        <br/>
-        <section>
-            <form action="/example.html" method="POST">
-                <h1>CREATING A LOGIN FORM</h1>
-                <section class="Login">
-                    <label for="username">Username:</label>
-                    <input id="username" name="username" type="text"/>
-                    <br/>
-                    <label for="user-pw">Password:</label>
-                    <input id="user-pw" name="user-pw" type="password"/>
-                </section>
-
-                <hr/>
-
-                <h1>CREATE A BURGER</h1>
-                <section class="protein"> <!-- Text form -->
-                    <label for="patty">What type of protein would you like?</label>
-                    <input type="text" name="patty" id="patty"/>
-                </section>
-
-                <hr/>
-
-                <section class="patties"> <!-- Number form -->
-                    <label for="patties">How many patties would you like?</label>
-                    <input type="number" name="amount" id="amount" step="1"/>
-                </section>
-
-                <hr/>
-
-                <section class="cooked"> <!-- Range form -->
-                    <label for="doneness">How do you want your patty cooked?</label>
-                    <br>
-                    <span>Rare</span>
-                    <input type="range" name="doneness" id="doneness" min="1" max="5" step="1"/> <!-- The higher the step number, the less smooth the slide is.-->
-                    <span>Well-Done</span>
-                </section>
-
-                <hr/>
-
-                <section class="toppings"> <!-- Checkbox form -->
-                    <p>What toppings would you like?</p>
-                    <input type="checkbox" name="topping" id="lettuce" value="lettuce"/>
-                    <label for="lettuce">Lettuce</label>
-                    
-                    <input type="checkbox" name="topping" id="tomato" value="tomato"/>
-                    <label for="tomato">Tomato</label>
-                    
-                    <input type="checkbox" name="topping" id="onion" value="onion"/>
-                    <label for="onion">Onion</label>
-                </section>
-
-                <hr/>
-
-                <section class="cheese"> <!-- Radio button form -->
-                    <p>Would you like to add cheese?</p>
-                    <input type="radio" name="cheese" id="yes" value="yes"/>
-                    <label for="yes">Yes</label>
-                    
-                    <input type="radio" name="cheese" id="no" value="no"/>
-                    <label for="no">No</label>
-                </section>
-
-                <hr/>
-
-                <section class="bun-type"> <!-- Dropdown menu -->
-                    <label for="bun">What type of bunn would you like?</label>
-                    <select name="bun" id="bun">
-                        <option value="sesame">Sesame</option>
-                        <option value="potatoe">Potatoe</option>
-                        <option value="Pretzel">Pretzel</option>
-                    </select>
-                </section>
-
-                <hr/>
-
-                <section class="sauce-selection"> <!--Datalist input form-->
-                    <label for="sauce">What type of sauce would you like?</label>
-                    <input type="text" list="sauces" id="sauce" name="sauce"/>
-                    <datalist id="sauce">
-                        <option value="ketchup"></option>
-                        <option value="mayo"></option>
-                        <option value="mustard"></option>
-                    </datalist>
-                </section>
-
-                <hr/>
-
-                <section class="extra-info"> <!-- Textarea form -->
-                    <label for="extra">Anything else you want to add?</label>
-                    <br/>
-                    <textarea id="extra" name="extra" rows="3" cols="40">Be creative!</textarea>
-                </section>
-                
-                <hr/>
-
-                <section class="submission">
-                    <input type="submit" value="Place order"/>
-                </section>
-            </form>
-        </section>
+        
         <footer>
             <hr> <!-- Linha de separação -->
             FOOTER
