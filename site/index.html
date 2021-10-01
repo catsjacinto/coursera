@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Hello Coursera!</title>
-</head>
-<body>
-<h1>Hello Coursera!</h1>
-<h2>This is a great course!</h2>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Nice Restaurant</title>
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<nav id="header-nav" class="navbar navbar-default"> <!-- classes provided by bootstrap, go through Bootstrap documentation to know which classes to use. -->
+				<div class="container"> <!-- using container instead of -fluid because website doesn't have a lot of info, so if content stretches w/ -fluid, it'll look weird, this way it's contained. -->
+					<div class="navbar-header">
+						<a href="index.html" class="pull-left visible=md visible=lg">
+							<div id="logo-img" alt="Logo image"></div>
+						</a>
+			
+						<div class="navbar-brand">
+							<a href="index.html"><h1>Nice Restaurant</h1></a>
+							<p>
+								<img src="images/star-k-logo.png" alt="Kosher certification">
+								<span>Kosher Certified</span>
+							</p>
+						</div>
+					</div>
+				</div>
+		  </nav>
+		</header>
+		<!-- jQuery -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>
